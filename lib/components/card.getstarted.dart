@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class MyCardBanner extends StatelessWidget {
   final Function()? ontTap;
@@ -16,9 +17,9 @@ class MyCardBanner extends StatelessWidget {
         child: Row(
           children: [
             Container(
-              height: 100,
-              width: 100,
-              color: Colors.deepPurple[200],
+              height: size.height * 0.15,
+              width: size.height * 0.15,
+              child: Lottie.asset('lib/animations/medical.json'),
             ),
             SizedBox(width: size.height * 0.02),
             Expanded(

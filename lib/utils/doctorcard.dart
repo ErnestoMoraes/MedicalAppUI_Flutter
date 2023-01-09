@@ -18,11 +18,13 @@ class DoctorCard extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Padding(
-      padding: EdgeInsets.only(left: size.height * 0.03),
+      padding: EdgeInsets.only(
+        left: size.height * 0.03,
+      ),
       child: Container(
         padding: EdgeInsets.symmetric(
           horizontal: size.height * 0.04,
-          vertical: size.height * 0.02,
+          vertical: size.height * 0.03,
         ),
         decoration: BoxDecoration(
             color: Colors.deepPurple[100],
