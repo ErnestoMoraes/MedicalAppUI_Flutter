@@ -3,6 +3,7 @@ import 'package:medicalappui/components/appbar.banner.dart';
 import 'package:medicalappui/components/card.getstarted.dart';
 import 'package:medicalappui/components/search.dart';
 import 'package:medicalappui/utils/categorycard.dart';
+import 'package:medicalappui/utils/doctorcard.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -27,10 +28,10 @@ class _HomePageState extends State<HomePage> {
             MyCardBanner(
               ontTap: () {},
             ),
-            SizedBox(height: size.height * 0.04),
+            SizedBox(height: size.height * 0.03),
             const MySearch(),
-            SizedBox(height: size.height * 0.04),
-            Container(
+            SizedBox(height: size.height * 0.03),
+            SizedBox(
               height: 80,
               child: ListView(
                 scrollDirection: Axis.horizontal,
@@ -59,7 +60,60 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-            SizedBox(height: size.height * 0.04),
+            SizedBox(height: size.height * 0.03),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: size.height * 0.03),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text(
+                    'Doctor list',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                  Text(
+                    'See all',
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                        color: Colors.grey[600]),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(height: size.height * 0.03),
+            Expanded(
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  const DoctorCard(
+                    doctorImage: 'lib/images/doctor1.jpg',
+                    rating: '4.8',
+                    doctorName: 'Ernesto',
+                    doctorProfession: 'Therapist',
+                  ),
+                  const DoctorCard(
+                    doctorImage: 'lib/images/doctor2.jpg',
+                    rating: '4.8',
+                    doctorName: 'Ernesto',
+                    doctorProfession: 'Therapist',
+                  ),
+                  const DoctorCard(
+                    doctorImage: 'lib/images/doctor3.jpg',
+                    rating: '4.8',
+                    doctorName: 'Ernesto',
+                    doctorProfession: 'Therapist',
+                  ),
+                  const DoctorCard(
+                    doctorImage: 'lib/images/doctor1.jpg',
+                    rating: '4.8',
+                    doctorName: 'Ernesto',
+                    doctorProfession: 'Therapist',
+                  ),
+                  SizedBox(width: size.height * 0.03),
+                ],
+              ),
+            ),
+            SizedBox(height: size.height * 0.03),
           ],
         ),
       ),
