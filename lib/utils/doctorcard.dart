@@ -24,12 +24,14 @@ class DoctorCard extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.symmetric(
           horizontal: size.height * 0.04,
-          vertical: size.height * 0.03,
+          vertical: size.height * 0.01,
         ),
         decoration: BoxDecoration(
-            color: Colors.deepPurple[100],
-            borderRadius: BorderRadius.circular(12)),
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(12),
+        ),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(100),
@@ -37,7 +39,7 @@ class DoctorCard extends StatelessWidget {
                 doctorImage,
                 height: size.height * 0.14,
                 width: size.height * 0.14,
-                fit: BoxFit.fitWidth,
+                fit: BoxFit.cover,
               ),
             ),
             SizedBox(height: size.height * 0.01),
@@ -56,11 +58,14 @@ class DoctorCard extends StatelessWidget {
             SizedBox(height: size.height * 0.01),
             Text(
               doctorName,
-              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              style: const TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.bold,
+              ),
             ),
             SizedBox(height: size.height * 0.005),
             Text(
-              '$doctorProfession, 7 y.e.',
+              doctorProfession,
               style: const TextStyle(fontSize: 14),
             )
           ],

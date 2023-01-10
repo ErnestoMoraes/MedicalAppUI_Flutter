@@ -15,10 +15,13 @@ class MyCategoryCard extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(left: size.height * 0.03),
       child: Container(
-        padding: EdgeInsets.all(size.height * 0.02),
+        padding: EdgeInsets.symmetric(
+          vertical: size.height * 0.035,
+          horizontal: size.height * 0.02,
+        ),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
-          color: Colors.deepPurple[100],
+          color: Colors.white70,
         ),
         child: Row(
           children: [
@@ -27,7 +30,10 @@ class MyCategoryCard extends StatelessWidget {
               height: size.height * 0.04,
             ),
             SizedBox(width: size.width * 0.02),
-            Text(legend)
+            Text(
+              legend,
+              style: const TextStyle(fontSize: 15),
+            )
           ],
         ),
       ),

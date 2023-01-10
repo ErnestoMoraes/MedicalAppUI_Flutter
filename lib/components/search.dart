@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:medicalappui/pages/homepage.dart';
+import 'package:medicalappui/pages/secondpage.dart';
 
 class MySearch extends StatelessWidget {
-  const MySearch({super.key});
+  final controller;
+  const MySearch({super.key, required this.controller});
 
   @override
   Widget build(BuildContext context) {
@@ -14,14 +17,19 @@ class MySearch extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.all(size.height * 0.01),
         decoration: BoxDecoration(
-          color: Colors.deepPurple[100],
+          color: Colors.white,
           borderRadius: BorderRadius.circular(12),
         ),
-        child: const TextField(
+        child: TextField(
+          controller: controller,
+          onChanged: (value) => print('${controller.text}'),
           decoration: InputDecoration(
-              prefixIcon: Icon(Icons.search_rounded),
+              prefix: SizedBox(
+                width: size.height * 0.02,
+              ),
+              suffixIcon: const Icon(Icons.search_rounded),
               border: InputBorder.none,
-              hintText: 'How can we help you?'),
+              hintText: 'Digite aqui sua dúvida'),
         ),
       ),
     );

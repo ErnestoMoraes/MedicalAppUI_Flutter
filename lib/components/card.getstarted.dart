@@ -13,7 +13,9 @@ class MyCardBanner extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.all(size.height * 0.02),
         decoration: BoxDecoration(
-            color: Colors.pink[100], borderRadius: BorderRadius.circular(12)),
+          color: Colors.white70,
+          borderRadius: BorderRadius.circular(12),
+        ),
         child: Row(
           children: [
             Container(
@@ -27,7 +29,7 @@ class MyCardBanner extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Text(
-                    'How do you feel?',
+                    'Gostaria de fazer uma doação?',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
@@ -35,7 +37,7 @@ class MyCardBanner extends StatelessWidget {
                   ),
                   SizedBox(height: size.height * 0.015),
                   const Text(
-                    'Fill out your medical card right now',
+                    'Rápido, fácil e pratico',
                     style: TextStyle(
                       fontSize: 14,
                     ),
@@ -45,14 +47,17 @@ class MyCardBanner extends StatelessWidget {
                     padding: EdgeInsets.all(size.height * 0.015),
                     decoration: BoxDecoration(
                       color: Colors.deepPurple[300],
-                      borderRadius: BorderRadius.circular(12),
+                      borderRadius: BorderRadius.circular(5),
                     ),
                     child: Center(
                       child: GestureDetector(
                         onTap: ontTap,
                         child: const Text(
-                          'Get Started',
-                          style: TextStyle(color: Colors.white),
+                          'Começar',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                     ),
