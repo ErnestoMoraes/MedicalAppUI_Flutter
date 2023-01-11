@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:medicalappui/pages/homepage.dart';
+import 'package:medicalappui/pages/selectpage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.deepPurple,
         fontFamily: GoogleFonts.rubik().fontFamily,
       ),
-      home: const HomePage(),
+      home: const SelectPage(),
     );
   }
 }
