@@ -44,7 +44,7 @@ class _SelectPageState extends State<SelectPage> {
             backgroundColor: Colors.grey[300]!,
             color: Colors.grey[800],
             activeColor: Colors.white,
-            tabBackgroundColor: Colors.deepPurple.shade400,
+            tabBackgroundColor: Colors.blue.shade600,
             padding: const EdgeInsets.all(10),
             gap: 10,
             tabs: const [

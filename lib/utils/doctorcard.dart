@@ -27,7 +27,7 @@ class DoctorCard extends StatelessWidget {
           vertical: size.height * 0.01,
         ),
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: Colors.white70,
           borderRadius: BorderRadius.circular(12),
         ),
         child: Column(

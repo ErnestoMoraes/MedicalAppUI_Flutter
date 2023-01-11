@@ -46,7 +46,7 @@ class MyCardBanner extends StatelessWidget {
                   Container(
                     padding: EdgeInsets.all(size.height * 0.015),
                     decoration: BoxDecoration(
-                      color: Colors.deepPurple[300],
+                      color: Colors.blue[500],
                       borderRadius: BorderRadius.circular(5),
                     ),
                     child: Center(
