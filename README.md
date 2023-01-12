@@ -14,5 +14,5 @@ Um aplicativo apenas mobile feito em Flutter. Está em fase de produção.
 
 ### Atividades Práticas e Conhecimentos aplicados:
  - [x] Navegação entre Pages
- - [ ] 
+ - [ ] Layout responsivo
  
