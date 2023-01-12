@@ -12,4 +12,4 @@ Um aplicativo apenas mobile feito em Flutter. Está em fase de produção.
  - Settings
 
 ### Atividades Práticas e Conhecimentos aplicados:
- - [ x ] Navegação entre Pages
+ - [x] Navegação entre Pages
